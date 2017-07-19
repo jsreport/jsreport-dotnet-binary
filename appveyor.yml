@@ -6,3 +6,6 @@ before_build:
   - cmd: dotnet restore
 hosts:
   api.nuget.org: 93.184.221.200
+test_script:
+- cd jsreport.Binary.Test
+- dotnet test
