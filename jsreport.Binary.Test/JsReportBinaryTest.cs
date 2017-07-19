@@ -3,13 +3,13 @@ using Shouldly;
 using System;
 using System.Diagnostics;
 using System.IO;
-using Xunit;
 
 namespace jsreport.Binary.Test
 {    
+    [TestFixture]
     public class JsReportBinaryTest
     {
-        [Fact]
+        [Test]
         public void ExtractAndRunJsReportBinary()
         {            
             var tmpFile = Path.GetTempFileName();
