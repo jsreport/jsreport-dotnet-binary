@@ -12,4 +12,17 @@
     <EmbeddedResource Include="jsreport.zip" />
   </ItemGroup>
 
+  <Choose>
+    <When Condition=" '$(SolutionName)' == 'jsreport.development' ">
+      <ItemGroup>        
+        <ProjectReference Include="..\..\jsreport-dotnet-shared\jsreport.Shared\jsreport.Shared.csproj" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>        
+        <PackageReference Include="jsreport.Shared" Version="1.0.0" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+
 </Project>

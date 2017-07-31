@@ -16,7 +16,7 @@ namespace jsreport.Binary.Test
 
             using (var fs = File.Create(tmpFile))
             {
-                JsReportBinary.GetStream().CopyTo(fs);
+                JsReportBinary.GetBinary().ReadContent().CopyTo(fs);
             }
 
             var p = Process.Start(tmpFile, "--version");

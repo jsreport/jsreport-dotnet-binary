@@ -1,4 +1,5 @@
-﻿using System;
+﻿using jsreport.Shared;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
@@ -13,11 +14,16 @@ namespace jsreport.Binary
         /// <summary>
         /// Get jsreport executable from the assembly manifest stream
         /// </summary>        
-        public static Stream GetStream()
-        { 
+        public static IReportingBinary GetBinary()
+        {
             var assembly = typeof(JsReportBinary).GetTypeInfo().Assembly;
-            var zip = new ZipArchive(assembly.GetManifestResourceStream("jsreport.Binary.jsreport.zip"));
-            return zip.Entries.First().Open();            
+
+            return new ReportingBinary("default-" + assembly.GetName().Version.ToString(),
+                () =>
+                {
+                    var zip = new ZipArchive(assembly.GetManifestResourceStream("jsreport.Binary.jsreport.zip"));
+                    return zip.Entries.First().Open();
+                });
         }
     }
 }
