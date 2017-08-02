@@ -1,7 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.0.15</Version>    
+    <Version>1.7.0-beta1</Version>
+    <Authors>Jan Blaha</Authors>
+    <Company>jsreport</Company>
+    <Product>jsreport</Product>
+    <Copyright>Copyright 2013-2017 Jan Blaha</Copyright>
+    <PackageLicenseUrl>http://www.opensource.org/licenses/mit-license.php</PackageLicenseUrl>
+    <PackageProjectUrl>https://jsreport.net</PackageProjectUrl>
+    <PackageIconUrl>http://jsreport.net/img/favicon.ico</PackageIconUrl>
+    <RepositoryUrl>https://github.com/jsreport/jsreport-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>jsreport</PackageTags>
+    <Description>The package includes jsreport compiled into single binary. You gonna need also jsreport.Local which wraps it with c# API.</Description>    
   </PropertyGroup>
 
   <ItemGroup>
