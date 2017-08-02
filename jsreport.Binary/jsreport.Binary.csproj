@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
     <Version>1.7.0-beta1</Version>
     <Authors>Jan Blaha</Authors>
     <Company>jsreport</Company>
@@ -12,7 +12,9 @@
     <RepositoryUrl>https://github.com/jsreport/jsreport-dotnet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>jsreport</PackageTags>
-    <Description>The package includes jsreport compiled into single binary. You gonna need also jsreport.Local which wraps it with c# API.</Description>    
+    <Description>The package includes jsreport compiled into single binary. You gonna need also jsreport.Local which wraps it with c# API.</Description>
+    <PackageReleaseNotes>Release notes are at https://github.com/jsreport/jsreport/releases</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>    
   </PropertyGroup>
 
   <ItemGroup>
@@ -35,5 +37,9 @@
       </ItemGroup>
     </Otherwise>
   </Choose>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">  
+    <PackageReference Include="System.IO.Compression" Version="4.3.0" />    
+  </ItemGroup>
 
 </Project>
