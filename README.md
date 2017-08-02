@@ -1,5 +1,6 @@
 # jsreport-dotnet-binary
 [![Build status](https://ci.appveyor.com/api/projects/status/o2xkoca4gtloxayx?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-binary)
+[![NuGet](https://img.shields.io/nuget/v/jsreport.Binary.svg)](https://nuget.org/packages/jsreport.Binary)
 
 This package includes the raw [jsreport.exe binary](https://jsreport.net/learn/single-file-executable) embedded in the manifest stream. This allows very easy attaching of jsreport into .net projects. The binary can be used directly but it is recommended to use another package [jsreport-local](https://github.com/jsreport/jsreport-dotnet-local) which adds simple to use wrapper around.
 
