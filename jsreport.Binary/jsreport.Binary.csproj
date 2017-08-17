@@ -33,7 +33,7 @@
     </When>
     <Otherwise>
       <ItemGroup>        
-        <PackageReference Include="jsreport.Shared" Version="1.0.0-beta1" />
+        <PackageReference Include="jsreport.Shared" Version="1.0.1" />
       </ItemGroup>
     </Otherwise>
   </Choose>
