@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
-    <Version>2.3.0</Version>
+    <Version>2.3.1</Version>
     <Authors>Jan Blaha</Authors>
     <Company>jsreport</Company>
     <Product>jsreport</Product>
@@ -15,8 +15,8 @@
     <Description>The package includes jsreport compiled into single binary. You gonna need also jsreport.Local which wraps it with c# API.</Description>
     <PackageReleaseNotes>Release notes are at https://github.com/jsreport/jsreport/releases</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>2.3.0.0</AssemblyVersion>
-    <FileVersion>2.3.0.0</FileVersion>    
+    <AssemblyVersion>2.3.1.0</AssemblyVersion>
+    <FileVersion>2.3.1.0</FileVersion>    
   </PropertyGroup>
 
   <Choose>
