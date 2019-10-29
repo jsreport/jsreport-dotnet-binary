@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <Version>2.6.1</Version>
     <Authors>Jan Blaha</Authors>
     <Company>jsreport</Company>
@@ -31,11 +31,7 @@
       </ItemGroup>
     </Otherwise>
   </Choose>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">  
-    <PackageReference Include="System.IO.Compression" Version="4.3.0" />    
-  </ItemGroup>
-
+  
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="Powershell.exe -ExecutionPolicy ByPass -File download.ps1" />
   </Target>
