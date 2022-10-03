@@ -1,2 +1,2 @@
 ﻿[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-(new-object System.Net.WebClient).DownloadFile('https://github.com/jsreport/jsreport/releases/download/3.7.1/jsreport-win.zip','jsreport.zip')
+# (new-object System.Net.WebClient).DownloadFile('https://github.com/jsreport/jsreport/releases/download/3.8.0/jsreport-win.zip','jsreport.zip')
