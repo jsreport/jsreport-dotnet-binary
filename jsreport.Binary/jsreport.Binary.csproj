@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
-    <Version>4.3.1</Version>
+    <Version>4.4.0</Version>
     <Authors>Jan Blaha</Authors>
     <Company>jsreport</Company>
     <Product>jsreport</Product>
@@ -15,8 +15,8 @@
     <Description>The package includes jsreport compiled into single binary. You gonna need also jsreport.Local which wraps it with c# API.</Description>
     <PackageReleaseNotes>Release notes are at https://github.com/jsreport/jsreport/releases</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>4.3.1.0</AssemblyVersion>
-    <FileVersion>4.3.1.0</FileVersion>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <FileVersion>4.4.0.0</FileVersion>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>    
   </PropertyGroup>
